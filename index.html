@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff0f5">
+    <title>Nuestro pequeño universo ❤️</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Música -->
+    <audio id="musica" loop>
+        <source src="musica/nuestra-cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="botonMusica" class="boton-musica" onclick="alternarMusica()">
+        ♫ Reproducir música
+    </button>
+
+    <!-- Corazones flotantes -->
+    <div id="corazones"></div>
+
+    <!-- Bienvenida -->
+    <section class="portada" id="inicio">
+        <div class="contenido-portada">
+            <span class="etiqueta">✧ Un regalo para alguien especial ✧</span>
+            <h1>Nuestro pequeño universo</h1>
+            <div class="corazon-grande">❤️</div>
+            <p>Hay personas que llegan a tu vida y la convierten en algo maravilloso...</p>
+            <p class="nombre">Para ti, Leidy Marcela 💗</p>
+            <button class="boton-principal" onclick="abrirRegalo()">
+                Abrir mi regalo ❤️
+            </button>
+        </div>
+    </section>
+
+    <!-- Contenido principal -->
+    <main id="contenido" class="oculto">
+
+        <header class="encabezado">
+            <p class="pequeno">CON TODO MI AMOR</p>
+            <h1>Para mi persona favorita ❤️</h1>
+            <p>Este pequeño universo existe porque tú haces especial el mío.</p>
+        </header>
+
+        <!-- Contador -->
+        <section class="seccion contador-seccion">
+            <h2>Desde que comenzó nuestra historia 💞</h2>
+            <p>Y cada segundo es una razón más para elegirte.</p>
+
+            <div class="contador">
+                <div class="tiempo">
+                    <span id="dias">0</span>
+                    <small>Días</small>
+                </div>
+                <div class="tiempo">
+                    <span id="horas">0</span>
+                    <small>Horas</small>
+                </div>
+                <div class="tiempo">
+                    <span id="minutos">0</span>
+                    <small>Minutos</small>
+                </div>
+                <div class="tiempo">
+                    <span id="segundos">0</span>
+                    <small>Segundos</small>
+                </div>
+            </div>
+
+            <p class="fecha">Nuestra historia comenzó el 19 de julio de 2026 ❤️</p>
+        </section>
+
+        <!-- Galería -->
+        <section class="seccion">
+            <h2>Nuestros momentos especiales 📸</h2>
+            <p class="descripcion">
+                Cada fotografía guarda un pedacito de nuestra historia.
+            </p>
+
+            <div class="galeria">
+
+                <div class="foto">
+                    <img src="fotos/foto1.jpg" alt="Nuestro recuerdo 1">
+                    <p>Nuestra primera foto ❤️</p>
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/foto2.jpg" alt="Nuestro recuerdo 2">
+                    <p>Contigo todo es mejor 🌷</p>
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/foto3.jpg" alt="Nuestro recuerdo 3">
+                    <p>Una sonrisa que amo 💕</p>
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/foto4.jpg" alt="Nuestro recuerdo 4">
+                    <p>Un momento inolvidable ✨</p>
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/foto5.jpg" alt="Nuestro recuerdo 5">
+                    <p>Foto favorita ❤️</p>
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/foto6.jpg" alt="Nuestro recuerdo 6">
+                    <p>Y todos los que faltan... 🥰</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Carta -->
+        <section class="seccion carta-seccion">
+            <div class="sobre">💌</div>
+            <h2>Una carta para ti, Amor #19</h2>
+
+            <div class="carta">
+                <p>Mi amor:</p>
+
+                <p>
+                    Hoy cumplimos cuatro meses juntos y  
+                    quiero que sepas lo importante que eres para mí.
+                    Desde que llegaste a mi vida, has llenado mis días
+                    de sonrisas, momentos bonitos y razones para ser feliz.
+                </p>
+
+                <p>
+                    No quiero prometerte una historia perfecta,
+                    porque sé que la vida tiene sus dificultades.
+                    Pero sí quiero prometerte que deseo seguir
+                    construyendo esta historia contigo, aprender,
+                    crecer y disfrutar cada momento a tu lado.
+                </p>
+
+                <p>
+                    Quiero ser ese hombre que te cuide, te respete,
+                    te apoye y que nunca deje de buscar motivos
+                    para verte sonreír.
+                </p>
+
+                <p>
+                    Gracias por ser tú, por compartir tu vida conmigo
+                    y por permitirme formar parte de la tuya.
+                </p>
+
+                <p class="firma">
+                    Con todo mi amor,<br>
+                    edward mora ❤️#19
+                </p>
+            </div>
+        </section>
+
+        <!-- Mensajes sorpresa -->
+        <section class="seccion sorpresa">
+            <h2>Un pequeño recordatorio 💗</h2>
+            <p>Quiero recordarte algo cada vez que lo necesites.</p>
+
+            <div id="mensaje" class="mensaje">
+                Eres mi casualidad favorita.
+            </div>
+
+            <button class="boton-principal" onclick="nuevoMensaje()">
+                Otro mensajito ❤️
+            </button>
+        </section>
+
+        <!-- Final -->
+        <section class="final">
+            <div class="corazon-grande">❤️</div>
+            <h2>Mi deseo es seguir a tu lado</h2>
+            <p>
+                No sé cuántos capítulos tendrá nuestra historia,
+                pero quiero que sigamos escribiéndolos juntos.
+            </p>
+            <h1>Te amo, mi chiquita. ❤️</h1>
+            <p class="final-pequeno">Con amor, hoy y siempre.</p>
+        </section>
+
+        <footer>
+            Hecho con mucho amor para Leidy Marcela Marinez ❤️
+            <br>
+            Nuestro pequeño universo · 2026
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
